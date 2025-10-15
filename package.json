@@ -2,6 +2,9 @@
   "name": "02-api-rest-nodejs",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">= 18"
+  },
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
@@ -21,6 +24,7 @@
     "tsup": "^8.5.0",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
+    "sqlite3": "^5.1.7",
     "vitest": "^3.2.4"
   },
   "dependencies": {
@@ -28,7 +32,7 @@
     "dotenv": "^17.2.3",
     "fastify": "^5.6.1",
     "knex": "^3.1.0",
-    "sqlite3": "^5.1.7",
+    "pg": "^8.16.3",
     "zod": "^4.1.11"
   }
 }
